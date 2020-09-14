@@ -1,20 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <BaseSearch />
+    <div class="nav_div">
+      <img alt="Vue logo" src="./assets/logo.png" />
+      <div class="div1">
+        <BaseSearch />
+      </div>
+      <div class="div2">
+        <BaseNavMenu />
+      </div>
+    </div>
+
+    <div class="content_div">
+
+    </div>
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld'
-import BaseSearch from './components/BaseSearch'
+import BaseSearch from './components/BaseSearch';
+import BaseNavMenu from './components/BaseNavMenu';
 
 export default {
   name: 'App',
   components: {
-    BaseSearch
-  }
-}
+    BaseSearch,
+    BaseNavMenu,
+  },
+};
 </script>
 
 <style>
@@ -26,6 +39,41 @@ export default {
   color: #2c3e50;
   margin-top: 0px;
   margin-left: 0px;
+  min-width: 1100px;
+  min-height: 700px;
+}
+
+.nav_div {
   float: left;
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  background: green;
+  left: 0px;
+  top: 0px;
+}
+
+.div1 {
+  width: auto;
+  height: 50px;
+  background: red;
+}
+
+.div2 {
+  width: auto;
+  height: 350px;
+  background: yellow;
+}
+
+.content_div {
+  float: left;
+  left: 250px;
+  top: 0px;
+  width: calc(100% - 250px);
+  height: 100%;
+  border: 2px solid #f00;
+  border-radius: 6px;
+  background: gray;
+  position: absolute;
 }
 </style>
