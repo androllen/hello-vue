@@ -1,13 +1,13 @@
 <template>
-  <div>
-log
-  </div>
+<div>
+  waf
+</div>
 </template>
 
 <script>
-  export default {
-    
-  }
+export default {
+
+}
 </script>
 
 <style scoped>

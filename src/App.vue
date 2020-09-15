@@ -12,10 +12,10 @@
 
   <div class="content_div">
     <div class="targe_div">
-
+      <BaseTarge />
     </div>
     <div class="console_div">
-
+     <BaseConsole/>
     </div>
   </div>
 </div>
@@ -25,12 +25,16 @@
 // import HelloWorld from './components/HelloWorld'
 import BaseSearch from './components/BaseSearch';
 import BaseMenu from './components/BaseMenu';
+import BaseTarge from './components/BaseTarge';
+import BaseConsole from './components/BaseConsole';
 
 export default {
   name: 'App',
   components: {
     BaseSearch,
     BaseMenu,
+    BaseTarge,
+    BaseConsole
   },
 };
 </script>

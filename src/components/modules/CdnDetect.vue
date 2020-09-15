@@ -1,6 +1,6 @@
 <template>
   <div>
-log
+    cdn
   </div>
 </template>
 

@@ -2,17 +2,17 @@
 <div id="ele_div">
   <el-row class="tac">
     <el-col :span="24">
-      <el-menu default-active="1" unique-opened="true" class="el-menu-vertical" @open="handleOpen" @close="handleClose">
+      <el-menu router="true" default-active="$route.path" unique-opened="true" class="el-menu-vertical">
         <el-submenu index="1">
-          <template slot="title" >
+          <template slot="title">
             <i class="el-icon-location"></i>
             <span>信息收集</span>
           </template>
-          <el-menu-item index="1">Cdn 检测</el-menu-item>
-          <el-menu-item index="2">有些地址收集</el-menu-item>
+          <el-menu-item index="/info_cdn">Cdn 检测</el-menu-item>
+          <el-menu-item index="/info_waf">Waf 检测</el-menu-item>
+          <el-menu-item index="/info_email">邮箱地址收集</el-menu-item>
           <el-menu-item index="3">端口扫描</el-menu-item>
           <el-menu-item index="4">子域名爆破</el-menu-item>
-          <el-menu-item index="5">Waf 检测</el-menu-item>
           <el-menu-item index="6">Web 路径扫描</el-menu-item>
           <el-menu-item index="7">WhoIs 反差</el-menu-item>
         </el-submenu>
@@ -45,12 +45,8 @@
 <script>
 export default {
   methods: {
-    handleOpen(key, keyPath) {
-      console.log(key, keyPath);
-    },
-    handleClose(key, keyPath) {
-      console.log(key, keyPath);
-    }
+  
+
   }
 }
 </script>
@@ -63,6 +59,4 @@ export default {
   background: green;
   text-align: left;
 }
-
-
 </style>
