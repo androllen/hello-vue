@@ -53,7 +53,7 @@ export default {
 <style scoped>
 #ele_div {
   width: 100%;
-  height: 100%;
+  height: auto;
   position: absolute;
   background: green;
   text-align: left;

@@ -1,19 +1,24 @@
 <template>
-  <div id="app">
-    <div class="nav_div">
-      <img alt="Vue logo" src="./assets/logo.png" />
-      <div class="div1">
-        <BaseSearch />
-      </div>
-      <div class="div2">
-        <BaseNavMenu />
-      </div>
+<div id="app">
+  <div class="nav_div">
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <div class="div1">
+      <BaseSearch />
     </div>
+    <div class="div2">
+      <BaseNavMenu />
+    </div>
+  </div>
 
-    <div class="content_div">
+  <div class="content_div">
+    <div class="targe_div">
+
+    </div>
+    <div class="console_div">
 
     </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -75,5 +80,17 @@ export default {
   border-radius: 6px;
   background: gray;
   position: absolute;
+}
+
+.targe_div {
+  width: auto;
+  height: 80%;
+  background: blanchedalmond;
+}
+
+.console_div {
+  width: auto;
+  height: 20%;
+  background: aquamarine;
 }
 </style>
