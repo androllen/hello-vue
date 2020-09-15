@@ -6,29 +6,34 @@
         <el-submenu index="1">
           <template slot="title" >
             <i class="el-icon-location"></i>
-            <span>导航一</span>
+            <span>信息收集</span>
           </template>
-          <el-menu-item index="1">选项1</el-menu-item>
-          <el-menu-item index="2">选项2</el-menu-item>
-          <el-menu-item index="3">选项3</el-menu-item>
-          <el-menu-item index="4">选项4</el-menu-item>
+          <el-menu-item index="1">Cdn 检测</el-menu-item>
+          <el-menu-item index="2">有些地址收集</el-menu-item>
+          <el-menu-item index="3">端口扫描</el-menu-item>
+          <el-menu-item index="4">子域名爆破</el-menu-item>
+          <el-menu-item index="5">Waf 检测</el-menu-item>
+          <el-menu-item index="6">Web 路径扫描</el-menu-item>
+          <el-menu-item index="7">WhoIs 反差</el-menu-item>
         </el-submenu>
         <el-submenu index="2">
           <template slot="title">
             <i class="el-icon-menu"></i>
-            <span>导航二</span>
+            <span>专用漏洞</span>
           </template>
-          <el-menu-item index="1">选项1</el-menu-item>
-          <el-menu-item index="2">选项2</el-menu-item>
-          <el-menu-item index="3">选项3</el-menu-item>
-          <el-menu-item index="4">选项4</el-menu-item>
+          <el-menu-item index="1">Struts2 扫描</el-menu-item>
+          <el-menu-item index="2">JBoss 检测</el-menu-item>
+          <el-menu-item index="3">网站后台爆破</el-menu-item>
         </el-submenu>
         <el-submenu index="3">
           <template slot="title">
             <i class="el-icon-document"></i>
-            <span>导航三</span>
+            <span>辅助工具</span>
           </template>
-          <el-menu-item index="3">选项1</el-menu-item>
+          <el-menu-item index="1">字典生成</el-menu-item>
+          <el-menu-item index="2">URL 收集</el-menu-item>
+          <el-menu-item index="3">MD5 查询</el-menu-item>
+          <el-menu-item index="4">密码生成器</el-menu-item>
         </el-submenu>
       </el-menu>
     </el-col>

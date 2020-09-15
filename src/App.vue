@@ -6,7 +6,7 @@
       <BaseSearch />
     </div>
     <div class="div2">
-      <BaseNavMenu />
+      <BaseMenu />
     </div>
   </div>
 
@@ -24,13 +24,13 @@
 <script>
 // import HelloWorld from './components/HelloWorld'
 import BaseSearch from './components/BaseSearch';
-import BaseNavMenu from './components/BaseNavMenu';
+import BaseMenu from './components/BaseMenu';
 
 export default {
   name: 'App',
   components: {
     BaseSearch,
-    BaseNavMenu,
+    BaseMenu,
   },
 };
 </script>
