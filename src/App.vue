@@ -11,6 +11,9 @@
   </div>
 
   <div class="content_div">
+    <div class="history_div">
+      <BaseHistory/>
+    </div>
     <div class="targe_div">
       <BaseTarge />
     </div>
@@ -25,6 +28,7 @@
 // import HelloWorld from './components/HelloWorld'
 import BaseSearch from './components/BaseSearch';
 import BaseMenu from './components/BaseMenu';
+import BaseHistory from './components/BaseHistory';
 import BaseTarge from './components/BaseTarge';
 import BaseConsole from './components/BaseConsole';
 
@@ -33,6 +37,7 @@ export default {
   components: {
     BaseSearch,
     BaseMenu,
+    BaseHistory,
     BaseTarge,
     BaseConsole
   },
@@ -86,9 +91,15 @@ export default {
   position: absolute;
 }
 
+.history_div {
+  width: auto;
+  height: 37px;
+  background: white;
+}
+
 .targe_div {
   width: auto;
-  height: 80%;
+  height: calc(80% - 37px);
   background: blanchedalmond;
 }
 

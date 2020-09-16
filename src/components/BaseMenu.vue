@@ -2,7 +2,7 @@
 <div id="ele_div">
   <el-row class="tac">
     <el-col :span="24">
-      <el-menu router="true" default-active="/info_cdn" unique-opened="true" class="el-menu-vertical" @open="handleOpen">
+      <el-menu router="true" default-active="/info_cdn" unique-opened="true" class="el-menu-vertical" @open="handleOpen" @select="handleSelect">
         <el-submenu index="1">
           <template slot="title">
             <i class="el-icon-location"></i>
@@ -47,14 +47,23 @@ export default {
 
   methods: {
     // https://www.jianshu.com/p/ecbbd6810f7f
-    // handleSelect(key, keyPath) {
-    //   this.$router.push({
-    //     path: key,
-    //     params: {
-    //       data: 'query'
-    //     }
-    //   })
-    // }
+    handleSelect(key, keyPath) {
+      console.log(key, keyPath);
+      if (window.history && window.history.pushState) {
+        var state = {
+          key: key,
+          keyPath: keyPath,
+        }
+        // 向历史记录中插入了当前页
+        history.pushState(state, null, document.URL);
+      }
+      // this.$router.push({
+      //   path: key,
+      //   params: {
+      //     data: 'query'
+      //   }
+      // })
+    },
     handleOpen(key, keyPath) {
 
       // this.$router.push({path:"/info_cdn"});

@@ -20,10 +20,12 @@ const EmailGather = () => import('./components/modules/EmailGather.vue')
 const router = new VueRouter({
   mode: 'history',
   base: __dirname,
+  
   routes: [
     // Just use them normally in the route config
-    { path: '/info_waf', component: WafCheck },
+    { path: "/", redirect:'/info_cdn'},
     { path: '/info_cdn', component: CdnDetect },
+    { path: '/info_waf', component: WafCheck },
     { path: '/info_email', component: EmailGather }
   ]
 })
